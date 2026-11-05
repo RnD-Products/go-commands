@@ -5,6 +5,8 @@ description: Update the local Mo_App from GitHub (mr-imruu/Mo_App_v.02 main) - m
 
 # Mo_App update from GitHub
 
+**FOLDER (where Mo_App is):** the Mo_App folder is the folder these commands are saved in/run from. Resolve it once at the start: use the folder that contains `.claude/skills/<this command>` if the command is installed per-project; otherwise the current working directory if it contains `Mo_App_v.02` or `Projects`; otherwise the parent of the Mo_App app folder the user names ("FOLDER: /path"). Everywhere below, `~/Documents/Mo_App` means this FOLDER. Never assume `~/Documents`.
+
 ## Folders (two computers)
 
 The Mo_App folder (the one that holds `Mo_App_v.02`, `Projects`, `Fonts`, `Presets`, `Recovered`) is in a different place on each computer:

@@ -5,6 +5,8 @@ description: Check if the local Mo_App folder matches GitHub (mr-imruu/Mo_App_v.
 
 # App update: make the local folder match GitHub, only when needed
 
+**FOLDER (where Mo_App is):** the Mo_App folder is the folder these commands are saved in/run from. Resolve it once at the start: use the folder that contains `.claude/skills/<this command>` if the command is installed per-project; otherwise the current working directory if it contains `Mo_App_v.02` or `Projects`; otherwise the parent of the Mo_App app folder the user names ("FOLDER: /path"). Everywhere below, `~/Documents/Mo_App` means this FOLDER. Never assume `~/Documents`.
+
 `app update` is the quick, safe version of `mo update`: it first checks, and changes nothing when the local folder is already the same as GitHub. When it is behind, GitHub wins for the app code, and nothing the user could still need is lost (old app goes to the Trash, local-only projects stay, differing projects are saved as copies).
 
 ## Folders (two computers)

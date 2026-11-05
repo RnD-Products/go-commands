@@ -27,4 +27,4 @@ cd ~/claude-commands && git pull && ./install.sh
 
 ## Folder path
 
-The commands use `~/Documents/Mo_App`. If yours is elsewhere, tell Claude when you start: "FOLDER: /path/to/Mo_App".
+The Mo_App folder is the folder where the commands are saved. Run `./install.sh --project` from your Mo_App folder (commands live in `Mo_App/.claude/skills`), or open Claude Code in that folder. To point elsewhere, say "FOLDER: /path/to/Mo_App".
