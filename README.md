@@ -4,8 +4,8 @@ Shortcut commands for Claude Code. Install once per device; they work in any pro
 
 | Say | What it does |
 |---|---|
-| `mo pr` | Save the current project to GitHub as a pull request |
-| `mo update` | Update the current project from GitHub (old copy goes to the Trash) |
+| `go pr` | Save the current project to GitHub as a pull request |
+| `go update` | Update the current project from GitHub (old copy goes to the Trash) |
 | `app update` | Check first; update only if the project is behind GitHub |
 
 The "project" is the folder you open Claude Code in, and the GitHub repo is that folder's own `origin`. No setup per project.

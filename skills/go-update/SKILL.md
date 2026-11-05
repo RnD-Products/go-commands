@@ -1,9 +1,9 @@
 ---
-name: mo-update
-description: Update the current project from GitHub (full update, old copy to the Trash). Use when the user types /mo-update or says "mo update", "update from github", or similar.
+name: go-update
+description: Update the current project from GitHub (full update, old copy to the Trash). Use when the user types /go-update or says "go update", "update from github", or similar.
 ---
 
-# mo update: update this project from GitHub
+# go update: update this project from GitHub
 
 Works in any project: the project is the folder Claude Code is open in; the repo is its `origin`. Run every step without asking again. Never hard-delete: replaced files/folders go to the macOS Trash, and local files that GitHub does not have are kept.
 
