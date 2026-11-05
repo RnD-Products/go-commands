@@ -13,11 +13,11 @@ The "project" is the folder you open Claude Code in, and the GitHub repo is that
 ## Install
 
 ```bash
-gh repo clone uiux-subash/go-commands ~/go-commands
+git clone https://github.com/uiux-subash/go-commands.git ~/go-commands
 ~/go-commands/install.sh
 ```
 
-Restart Claude Code. (Needs `gh auth login` once per device.) Options: `--project` (current project only), `--link` (symlink; `git pull` updates instantly).
+Restart Claude Code. (`go pr` and `go update` need `gh auth login` once per device.) Options: `--project` (current project only), `--link` (symlink; `git pull` updates instantly).
 
 ## Update later
 
