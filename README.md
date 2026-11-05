@@ -1,12 +1,14 @@
 # Claude commands
 
-Install this repo on any device and these commands work in Claude Code, in any project:
+Shortcut commands for Claude Code. Install once per device; they work in any project.
 
 | Say | What it does |
 |---|---|
-| `mo pr` | Save the app, projects, fonts, presets and these commands to GitHub as a pull request |
-| `mo update` | Full update of the local Mo_App from GitHub (old app goes to the Trash) |
-| `app update` | Check first; update only if the local Mo_App is behind GitHub |
+| `mo pr` | Save the current project to GitHub as a pull request |
+| `mo update` | Update the current project from GitHub (old copy goes to the Trash) |
+| `app update` | Check first; update only if the project is behind GitHub |
+
+The "project" is the folder you open Claude Code in, and the GitHub repo is that folder's own `origin`. No setup per project.
 
 ## Install
 
@@ -15,16 +17,10 @@ gh repo clone uiux-subash/claude-commands ~/claude-commands
 ~/claude-commands/install.sh
 ```
 
-Restart Claude Code. Done. (Needs `gh auth login` once per device.)
-
-Options: `./install.sh --project` (only the current project), `./install.sh --link` (symlink; `git pull` updates instantly).
+Restart Claude Code. (Needs `gh auth login` once per device.) Options: `--project` (current project only), `--link` (symlink; `git pull` updates instantly).
 
 ## Update later
 
 ```bash
 cd ~/claude-commands && git pull && ./install.sh
 ```
-
-## Folder path
-
-The Mo_App folder is the folder where the commands are saved. Run `./install.sh --project` from your Mo_App folder (commands live in `Mo_App/.claude/skills`), or open Claude Code in that folder. To point elsewhere, say "FOLDER: /path/to/Mo_App".
