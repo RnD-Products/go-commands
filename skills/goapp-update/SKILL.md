@@ -1,9 +1,9 @@
 ---
-name: app-update
-description: Check whether the current project matches GitHub and update only if it is behind. Use when the user types /app-update or says "app update", "update app", "sync app", "check app update".
+name: goapp-update
+description: Check whether the current project matches GitHub and update only if it is behind. Use when the user types /goapp-update or says "gogoapp update", "update app", "sync app", "check goapp update".
 ---
 
-# app update: update only when needed
+# goapp update: update only when needed
 
 The quick, safe version of `go update`. Works in any project: the project is the folder Claude Code is open in; the repo is its `origin`.
 
