@@ -4,7 +4,7 @@ Shortcut commands for Claude Code. Install once per device; they work in any pro
 
 | Say | What it does |
 |---|---|
-| `go pr` | Save the current project to GitHub as a pull request (if the repo is not found on GitHub, it suggests pushing the project first, then opens the PR and gives you the link) |
+| `go pr` | Save the current project to GitHub as a pull request (if the repo is not found on GitHub, it suggests pushing the project to `main` first; PRs start from the next change) |
 | `go update` | Update the current project from GitHub (old copy goes to the Trash) |
 | `goapp update` | Check first; update only if the project is behind GitHub |
 
