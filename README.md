@@ -13,7 +13,7 @@ The "project" is the folder you open Claude Code in, and the GitHub repo is that
 ## Install
 
 ```bash
-git clone https://github.com/uiux-subash/go-commands.git ~/go-commands
+git clone https://github.com/RnD-Products/go-commands.git ~/go-commands
 ~/go-commands/install.sh
 ```
 
