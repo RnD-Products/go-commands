@@ -1,6 +1,6 @@
 ---
 name: goapp-update
-description: Check whether the current project matches GitHub and update only if it is behind. Use when the user types /goapp-update or says "gogoapp update", "update app", "sync app", "check goapp update".
+description: Check whether the current project matches GitHub and update only if it is behind. Use when the user types /goapp-update or says "goapp update", "update app", "sync app", "check goapp update".
 ---
 
 # goapp update: update only when needed
