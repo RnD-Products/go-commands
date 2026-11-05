@@ -21,4 +21,4 @@ for dir in "$SRC"/*/; do
   if [ "$LINK" = 1 ]; then ln -s "${dir%/}" "$DEST/$name"; else cp -R "${dir%/}" "$DEST/$name"; fi
   echo "installed $name -> $DEST/$name"
 done
-echo "Done. Restart Claude Code, then use: /mo-pr  /mo-update  /app-update"
+echo "Done. Restart Claude Code, then use: proj-init  proj-pr  proj-update  proj-check"

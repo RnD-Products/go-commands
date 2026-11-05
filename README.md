@@ -1,29 +1,29 @@
 # Claude commands
 
-Reusable Claude Code commands (skills) for Mo_App. Install once per device and they work in any project.
+Universal Claude Code commands (skills). Install once per device; they work in any project. Each project describes itself in a small `claude-commands.json`, so nothing is hardcoded.
 
 | Command | What it does |
 |---|---|
-| `mo-pr` | Save the app, projects, fonts, presets and these commands to GitHub as a pull request |
-| `mo-update` | Pull the latest from GitHub into the local Mo_App (full update) |
-| `app-update` | Check first; update only if the local Mo_App is behind GitHub |
+| `proj-init` | Detects the project and writes `claude-commands.json` |
+| `proj-pr` | Saves the app and extra folders to GitHub as a pull request (also "mo pr", "pr") |
+| `proj-update` | Full update from GitHub, old app to the Trash (also "mo update") |
+| `proj-check` | Updates only if the local project is behind (also "app update") |
 
 ## Install on any device
 
 ```bash
-git clone <this-repo-url> ~/claude-commands
-cd ~/claude-commands
-./install.sh            # global: every project on this device
+gh repo clone uiux-subash/claude-commands ~/claude-commands
+~/claude-commands/install.sh            # global: every project
 ```
 
-Other modes:
+Other modes: `./install.sh --project` (current project only), `./install.sh --link` (symlink; `git pull` updates instantly).
 
-```bash
-./install.sh --project  # only the project folder you run it from (./.claude/skills)
-./install.sh --link     # symlink, so `git pull` updates the commands instantly
-```
+## Use in a project
 
-Restart Claude Code, then say "mo pr", "mo update" or "app update".
+1. Open the project in Claude Code and say `proj init` (creates `claude-commands.json`).
+2. Then say `proj pr`, `proj update` or `proj check`.
+
+See `claude-commands.example.json` for a full example (the Mo_App setup). A config in `~/.claude/claude-commands.json` is used when a project has none.
 
 ## Update commands later
 
@@ -33,8 +33,4 @@ cd ~/claude-commands && git pull && ./install.sh
 
 ## Add a new command
 
-Create `skills/<name>/SKILL.md` (with `name` and `description` frontmatter), commit, and re-run `./install.sh`.
-
-## Folder path
-
-The commands assume the app lives at `~/Documents/Mo_App`. If yours is elsewhere, tell Claude the path when you start ("FOLDER: /path/to/Mo_App").
+Create `skills/<name>/SKILL.md` (with `name` and `description` frontmatter), commit, re-run `./install.sh`.
