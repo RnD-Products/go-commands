@@ -10,4 +10,4 @@ The quick, safe version of `go update`. Works in any project: the project is the
 1. Find the project and its `origin` + default branch. Clone the default branch fresh into the scratchpad.
 2. Compare without changing anything: `rsync -rcn --delete --itemize-changes` (excluding `.git`, `node_modules`, `dist`, `.DS_Store`) between the project and the clone. Note local-only files (never overwritten) and whether local git is behind `origin`.
 3. Everything matches: say "up to date" and stop.
-4. Behind: show a short list of what differs, then run the `go update` procedure (GitHub wins for tracked files, old copies to the Trash, local-only files stay). If local files are newer than GitHub's, do not overwrite: tell the user and suggest `go pr`.
+4. Behind: show a short list of what differs, then run the `go update` procedure (GitHub wins for tracked files, old copies to the Trash or backup folder, local-only files stay). If local files are newer than GitHub's, do not overwrite: tell the user and suggest `go pr`.
