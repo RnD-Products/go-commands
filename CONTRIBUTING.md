@@ -27,4 +27,4 @@ Restart Claude Code, then test `go pr`, `go update` and `goapp update` in a thro
 
 ## Reviewing
 
-Read the changed `SKILL.md` as the instructions Claude will run on other people's machines. Check that nothing deletes data without going to the Trash, pushes to `main`, or merges without being asked.
+Read the changed `SKILL.md` as the instructions Claude will run on other people's machines. Check that nothing deletes data without going to the Trash (or the backup folder on non-macOS systems), pushes to `main`, or merges without being asked.
